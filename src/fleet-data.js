@@ -53,5 +53,21 @@ export let fleet = [{
         model: 'Pick U Up',
         miles: '480',
         latLong: '40.774036 -73.967319'
+    },
+    {
+        license: 'AT4560',
+        type: 'car',
+        make: 'Uber',
+        model: 'Pick U Up',
+        miles: '480',
+        latLong: '40.774336 -73.967549'
+    },
+    {
+        license: 'QES678',
+        type: 'drone',
+        model: 'Google 3830',
+        airTimeHours: '3567',
+        base: 'New York',
+        latLong: '40.799223 -73.989411'
     }
 ];
