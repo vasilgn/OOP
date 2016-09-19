@@ -51,6 +51,7 @@ export class FleetDataService {
                             this.drones.push(drone);
                     } else {
                         let e = new DataError('invalid drone data', data);
+
                         this.errors.push(e);
                     }
 
@@ -80,8 +81,8 @@ export class FleetDataService {
     loadDrone(drone) {
         try {
             let d = new Drone(drone.license, drone.model, drone.latLong);
-            d.airTimeHours = d.airTimeHours;
-            d.base = d.base;
+            d.airTimeHours = drone.airTimeHours;
+            d.base = drone.base;
             return d;
         } catch (e) {
             this.errors.push(new DataError('error loading drone', drone));

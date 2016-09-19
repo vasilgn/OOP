@@ -1,4 +1,4 @@
-import { BaseElement } from './base-elements.js';
+import { BaseElement } from './base-element.js';
 
 export class Image extends BaseElement {
     constructor(filename) {

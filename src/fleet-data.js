@@ -39,7 +39,7 @@ export let fleet = [{
         latLong: '40.773352 -73.958873'
     },
     {
-        license: 'AT3400',
+        licenseD: 'AT3400',
         type: 'car',
         make: 'Uber',
         model: 'Auto Taxi Plus',

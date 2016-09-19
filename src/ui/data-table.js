@@ -1,4 +1,4 @@
-import { BaseElement } from './base-elements.js';
+import { BaseElement } from './base-element.js';
 
 export class DataTable extends BaseElement {
     constructor(headers, data) {
@@ -17,8 +17,12 @@ export class DataTable extends BaseElement {
             trTags += `<tr>`;
             let tdTags = '';
             for (let property of this.headers) {
-                    let field = row[property.toLowerCase()];
-                    trTags += `<td class="mdl-data-table__cell--non-numeric">
+                let currentProp = property.toLowerCase();
+                if (currentProp === 'airtimehours') {
+                    currentProp = 'airTimeHours';
+                }
+                let field = row[currentProp];
+                trTags += `<td class="mdl-data-table__cell--non-numeric">
                                 ${field}
                                 </td>
                             `;

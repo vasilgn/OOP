@@ -1,4 +1,4 @@
-import { BaseElement } from './base-elements.js';
+import { BaseElement } from './base-element.js';
 
 export class TitleBar extends BaseElement {
     constructor(title) {
@@ -17,7 +17,9 @@ export class TitleBar extends BaseElement {
     getElementString() {
         let links = '';
         for (let link of this.links)
-            links += `<a class="mdl-navigation__link" href="${link.href}">${link.title}</a>\n`;
+            links += `<a class="mdl-navigation__link">
+             ${link.title} 
+             </a>\n`;
 
         return `
             <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">

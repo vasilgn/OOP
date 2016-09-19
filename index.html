@@ -10,15 +10,14 @@
     <script src="node_modules/systemjs/dist/system.js"></script>
     <script src="node_modules/material-design-lite/material.js"></script>
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAp7XUML0oqYYiSJOWtui1kMjaSCEc-qLM&callback=googleMapsCallback"></script>
+    <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAp7XUML0oqYYiSJOWtui1kMjaSCEc-qLM&callback=googleMapsCallback"></script>-->
 </head>
 
 <body>
     <script>
-        function googleMapsCallback() {
-            System.paths['jquery'] = './node_modules/jquery/dist/jquery.js';
-            System.import('src/app.js');
-        }
+        //function googleMapsCallback() {
+        System.paths['jquery'] = './node_modules/jquery/dist/jquery.js';
+        System.import('src/app.js');
     </script>
 </body>
 

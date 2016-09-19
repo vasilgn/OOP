@@ -1,4 +1,4 @@
-import { BaseElement } from './base-elements.js';
+import { BaseElement } from './base-element.js';
 
 export class GoogleMap extends BaseElement {
     constructor(centerOfMap, data) {
