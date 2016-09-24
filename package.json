@@ -17,11 +17,6 @@
     "traceur": "0.0.111"
   },
   "devDependencies": {
-    "babel-cli": "^6.14.0",
-    "babel-core": "^6.14.0",
-    "babel-loader": "^6.2.5",
-    "babel-preset-es2015": "^6.14.0",
-    "lite-server": "^2.2.2",
-    "webpack": "^1.13.2"
+    "lite-server": "^2.2.2"
   }
 }
