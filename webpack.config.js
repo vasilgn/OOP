@@ -1,5 +1,5 @@
 module.exports = {
-    entry: './src/app.js',
+    entry: ['./src/app.js'],
     output: {
         path: './buld',
         filename: 'bundle.js',
@@ -10,7 +10,7 @@ module.exports = {
             exclude: /node_modules/,
             loader: 'babel-loader',
             query: {
-                preset: ['es2015']
+                presets: ['es2015']
             }
         }]
     }

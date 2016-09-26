@@ -1,22 +1,27 @@
 {
-  "name": "drones",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "lite-server"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "es6-module-loader": "^0.17.11",
-    "jquery": "^3.1.0",
-    "material-design-lite": "^1.2.1",
-    "systemjs": "^0.19.38",
-    "traceur": "0.0.111"
-  },
-  "devDependencies": {
-    "lite-server": "^2.2.2"
-  }
+    "name": "drones",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "lite-server",
+        "build": "webpack"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "es6-module-loader": "^0.17.11",
+        "jquery": "^3.1.0",
+        "material-design-lite": "^1.2.1",
+        "systemjs": "^0.19.38",
+        "traceur": "0.0.111"
+    },
+    "devDependencies": {
+        "babel-core": "^6.14.0",
+        "babel-loader": "^6.2.5",
+        "babel-preset-es2015": "^6.14.0",
+        "lite-server": "^2.2.2",
+        "webpack": "^1.13.2"
+    }
 }
