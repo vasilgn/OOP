@@ -7,8 +7,6 @@ import { CarsPage } from './cars-page.js';
 import { DronesPage } from './drones-page.js';
 import { MapPage } from './map-page.js';
 
-
-
 export class App extends ApplicationBase {
     constructor() {
         super('Fleet Manager')
